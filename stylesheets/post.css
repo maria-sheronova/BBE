@@ -1,0 +1,156 @@
+article {
+  padding: 50px 0 70px;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article p,
+article ol,
+article ul,
+article blockquote {
+  width: 700px;
+  margin: auto;
+}
+
+article h1,
+article h2,
+article h3,
+article h4 {
+  font-weight: 700;
+}
+
+article img {
+  width: 1020px;
+  margin: auto;
+  display: block;
+}
+
+article p,
+article blockquote,
+article li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+article h1 {
+  font-size: 40px;
+  line-height: 46px;
+
+}
+article h1 + h2 {
+  margin-top: 40px;
+}
+
+article h2{
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 79px;
+}
+article h2 + h3 {
+  margin-top: 40px;
+}
+article h2 + img,
+article h3 + img,
+article h4 + img {
+  margin-top: 80px;
+}
+article h3 {
+  font-size: 28px;
+  line-height: 34px;
+  margin-top: 35px;
+}
+article h4 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 35px;
+}
+article img {
+  margin-top: 80px;
+}
+article img + p,
+article img + blockquote,
+article img + h3,
+article img + h4,
+article img + ul {
+  margin-top: 80px;
+}
+article blockquote {
+  position: relative;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 18px;
+}
+article blockquote::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: black;
+  margin-left: -20px;
+}
+article h1 + p {
+  margin-top: 30px;
+}
+article h2 + p,
+article h3 + p,
+article h4 + p,
+article h2 + blockquote,
+article h3 + blockquote,
+article h4 + blockquote,
+article h2 + ul,
+article h3 + ul,
+article h4 + ul {
+  margin-top: 10px;
+}
+article p + h2,
+article p + h3, {
+  margin-top: 40px;
+}
+article p + h4 {
+  margin-top: 30px;
+}
+article p + p,
+article p + blockquote {
+  margin-top: 29px;
+}
+article ul {
+  font-size: 22px;
+  line-height: 34px;
+  margin-top: 30px;
+  width: 680px;
+  margin-bottom: 60px;
+}
+article li {
+  margin-top: 17px;
+}
+article ul li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+@media (max-width: 1024px) {
+  article img {
+    width: 100%
+  }
+}
+@media (max-width: 767px) {
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article p,
+  article ol,
+  article ul,
+  article blockquote {
+    width: calc(100% - 20px);
+  }
+
+  article ul {
+    width: calc(100% - 40px);
+  }
+}

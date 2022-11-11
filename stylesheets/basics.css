@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  —webkit-font-smoothing: antialiased;
+  —moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'PT Sans Caption', sans-serif;
+  /* display: flex; */
+  justify-content: center;
+  padding: 100px 0 50px;
+}
+
+
+a {
+  color: inherit;
+}
+
+
+i {
+  font-style: italic;
+}
+b {
+  font-weight: bold;
+}
